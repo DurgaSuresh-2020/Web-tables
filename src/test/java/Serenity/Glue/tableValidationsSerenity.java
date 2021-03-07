@@ -1,4 +1,4 @@
-package Serenity.Test;
+package Serenity.Glue;
 import Serenity.steps.tableValidationsStep;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;

@@ -1,7 +1,6 @@
 package Serenity.steps;
 
 import Serenity.Pages.ContextureSampleDataPage;
-import net.thucydides.core.annotations.Screenshots;
 import net.thucydides.core.annotations.Step;
 import org.openqa.selenium.WebDriver;
 import java.util.List;
@@ -24,7 +23,6 @@ public class tableValidationsStep {
     }
 
     @Step
-    @Screenshots(disabled=true)
     public void getDifferentItems()
     {
         List<String> items =  dataPage.getDistinctItems(dataPage.getItems());
@@ -33,7 +31,6 @@ public class tableValidationsStep {
     }
 
     @Step
-    @Screenshots(disabled=true)
     public void getItemsLessThanUnits(Integer units)
     {
         List<String> items = dataPage.getItemslessthanUnits(units);
@@ -41,7 +38,6 @@ public class tableValidationsStep {
     }
 
     @Step
-    @Screenshots(disabled=true)
     public void getItemsforUnits(int units,String item)
     {
         Integer NoOfItems = dataPage.getItemsforUnits(units,item);
@@ -49,7 +45,6 @@ public class tableValidationsStep {
     }
 
     @Step
-    @Screenshots(disabled=true)
     public void getExpensiveItem()
     {
         String expensiveUnitCost = dataPage.getExpensiveUnitCost();
@@ -58,7 +53,6 @@ public class tableValidationsStep {
     }
 
     @Step
-    @Screenshots(disabled=true)
     public void log(String message) {}
 
 }
